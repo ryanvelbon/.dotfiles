@@ -1,0 +1,13 @@
+call plug#begin('~/.vim/plugged')
+
+" Install PHP-related plugins
+Plug 'phpactor/phpactor', { 'do': 'composer install --no-dev -o' }
+Plug 'fatih/vim-go'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+
+call plug#end()
