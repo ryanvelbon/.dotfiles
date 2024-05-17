@@ -2,7 +2,12 @@
 
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
-ln -sf $DOTFILES/.bashrc $HOME/.bashrc
-ln -sf $DOTFILES/.gitconfig $HOME/.gitconfig
+# Bash
+ln -sf $DOTFILES/bash/bashrc $HOME/.bashrc
+
+# Git
+ln -sf $DOTFILES/git/gitconfig $HOME/.gitconfig
+
+# Tmux
 ln -sf $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
 
