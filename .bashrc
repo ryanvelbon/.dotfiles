@@ -121,3 +121,12 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Add date and time formatting to bash history
 HISTTIMEFORMAT="%F %T   "
 
+# git aliases
+alias ga='git add'
+alias gc='git commit'
+alias gd='git diff'
+alias gl='git log'
+alias gr='git restore'
+alias gpom='git push -u origin main'
+alias gs='git status'
+
