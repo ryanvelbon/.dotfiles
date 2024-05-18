@@ -10,8 +10,8 @@ ln -sf $DOTFILES/vim/vimrc.plug $HOME/.vimrc.plug
 ln -sf $DOTFILES/vim/vimrc $HOME/.vimrc
 
 # Neovim
-mkdir -p $HOME/.config/nvim
-ln -sf $DOTFILES/nvim/init.vim $HOME/.config/nvim/init.vim
+rm -rf $HOME/.config/nvim
+ln -s $DOTFILES/nvim $HOME/.config/nvim
 
 # Git
 ln -sf $DOTFILES/git/gitconfig $HOME/.gitconfig
