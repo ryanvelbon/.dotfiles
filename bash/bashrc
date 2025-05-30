@@ -116,6 +116,13 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Add date and time formatting to bash history
 HISTTIMEFORMAT="%F %T   "
 
+# Display a random quote every time a bash session is started
+QUOTE_FILE="$HOME/quotes"
+
+if [[ -f "$QUOTE_FILE" ]]; then
+    shuf -n 1 "$QUOTE_FILE"
+fi
+
 ### ALIASES ###
 
 alias cp='cp -i'
