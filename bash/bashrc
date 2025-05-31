@@ -150,3 +150,6 @@ alias gr='git restore'
 alias gpom='git push -u origin main'
 alias gs='git status'
 
+# Add Composer's global bin directory to PATH so Statamic CLI works
+export PATH="/home/ryan/.config/composer/vendor/bin":$PATH
+
