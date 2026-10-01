@@ -116,13 +116,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Add date and time formatting to bash history
 HISTTIMEFORMAT="%F %T   "
 
-# Display a random quote every time a bash session is started
-QUOTE_FILE="$HOME/quotes"
-
-if [[ -f "$QUOTE_FILE" ]]; then
-    shuf -n 1 "$QUOTE_FILE"
-fi
-
 ### ALIASES ###
 
 alias cp='cp -i'
@@ -144,12 +137,25 @@ alias vim='nvim'
 # git
 alias ga='git add'
 alias gc='git commit'
+alias gca='git commit --amend'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gl='git log'
 alias gr='git restore'
 alias gpom='git push -u origin main'
 alias gs='git status'
 
+alias py='python'
+
+# PHP
+alias cda='composer dump-autoload'
+
+# Laravel
+alias pa='php artisan'
+alias pamrs='php artisan migrate:refresh --seed'
+alias pawg='php artisan wayfinder:generate'
+
 # Add Composer's global bin directory to PATH so Statamic CLI works
 export PATH="/home/ryan/.config/composer/vendor/bin":$PATH
 
+export PATH="$HOME/.local/bin:$PATH"
